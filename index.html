@@ -29,17 +29,64 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>birthday_cissa</title>
-  <link rel="manifest" href="manifest.json">
+  <title>Aniversário Cecília</title>
+  <link rel="manifest" href="manifest.json"><style>
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    
+    .loader {
+      border: 16px solid #030303;
+      border-radius: 50%;
+      border: 15px solid ;
+      border-top: 16px solid yellow;
+      border-right: 16px solid black;
+      border-bottom: 16px solid yellow;
+      border-left: 16px solid black;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+    
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '1178471554';
+    var serviceWorkerVersion = '3833229547';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
 <body>
+<div class="loading">
+  <div class="loader"></div>
+</div>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
